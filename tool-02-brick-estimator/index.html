@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brick Estimator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Brick Estimator</h1>
+    <p class="subtitle">Calculate bricks needed for your wall projects</p>
+
+    <div class="input-group">
+      <label for="length">Wall length (meters):</label>
+      <input type="number" id="length" placeholder="Enter length" min="0" step="0.1">
+    </div>
+
+    <div class="input-group">
+      <label for="height">Wall height(meters):</label>
+      <input type="number" id="height" placeholder="Enter height" min="0" step="0.1">
+    </div>
+
+    <div class="input-group">
+    <label for="brickType">Brick Type</label>
+      <select id="brickType">
+        <option value="32">Standard (32 bricks/sqm)</option>
+        <option value="18">Modular (18 bricks/sqm)</option>
+      </select>
+    </div>
+
+    <button id="calculateBtn">Calculate Bricks</button>
+
+    <div class="result" id="result"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

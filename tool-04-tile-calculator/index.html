@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tile Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tile Calculator</h1>
+    <p class="subtitle">Calculate tiles needed for your floor</p>
+
+    <div class="input-group">
+      <label for="length">Floor length (meters):</label>
+      <input type="number" id="length" placeholder="Enter length" min="0" step="0.1">
+    </div>
+
+    <div class="input-group">
+      <label for="width">Floor Width (meters):</label>
+      <input type="number" id="width" placeholder="Enter width" min="0" step="0.1">
+    </div>
+
+    <div class="input-group">
+      <label for="tileSize">Tile Size:</label>
+      <select id="tileSize">
+        <option value="0.04">20cm x 20cm (0.04 sqm)</option>
+        <option value="0.09">30cm x 30cm (0.09 sqm)</option>
+        <option value="0.16">40cm x 40cm (0.16 sqm)</option>
+        <option value="0.25">50cm x 50cm (0.25 sqm)</option>
+        <option value="0.36">60cm x 60cm (0.36 sqm)</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label for="wastage">Wastage (%):</label>
+      <input type="number" id="wastage" placeholder="e.g., 10" min="0" max="100" value="10">
+    </div>
+
+    <button id="calculateBtn">Calculate Tiles</button>
+
+    <div class="result" id="result"></div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fertilizer Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fertilizer Dosage Calculator</h1>
+      <div class="subtitle">Calculate fertilizer needed for your farm</div>
+
+      <div class="input-group">
+        <label for="area">Field Area (sqm):</label>
+        <input
+          type="number"
+          id="area"
+          placeholder="Enter area"
+          min="0"
+          step="0.1"
+        />
+      </div>
+
+      <div class="input-group">
+        <label for="fertilizerType">Fertilizer Type:</label>
+        <select id="fertilizerType">
+          <option value="20">NPK 15-15-15 (20g/sqm)</option>
+          <option value="25">Urea (25g/sqm)</option>
+          <option value="30">DAP (30g/sqm)</option>
+          <option value="15">Organic Compost (15g/sqm)</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="applications">Number of Applications:</label>
+        <input
+          type="number"
+          id="applications"
+          placeholder="e.g., 3"
+          min="1"
+          value="1"
+        />
+      </div>
+
+      <button id="calculateBtn">Calculate Fertilizer</button>
+
+      <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
